@@ -1,2 +1,2 @@
 # proyecto1-AdivinaElColor
-Pimer proyecto del BootCamp de Hack A Boss
+Hack A Boss BootCamp: First project.
