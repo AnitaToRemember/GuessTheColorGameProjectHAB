@@ -1,0 +1,16 @@
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
