@@ -13,7 +13,7 @@
       <nav>
         <ul class="menu">
           <li>
-            <button>Jugar</button>
+            <button id="play">Jugar</button>
           </li>
           <li>
             <a href="./public/how_to_play.html">¿Cómo jugar?</a>
@@ -26,7 +26,15 @@
     </header>
 
     <main>
-      <div>Color RGB (255, 255, 255)</div>
+      <section>
+        <h2>¿Qué color es este?</h2>
+
+        <div> 
+          <p>
+            Color RGB (<span id="random_red">255</span>, <span id="random_green">255</span>, <span id="random_blue">255</span>)
+          </p>
+        </div>
+      </section>
 
       <section class="cuadros">
         <div class="colorDeLosCuadros"></div>
@@ -38,10 +46,12 @@
       </section>
 
       <section>
-        <p>Intentos: | Fallos:</p>
+        <p>
+          Aciertos: <span id="hits">1</span> | Fallos: <span id="failures">1</span>
+        </p>
       </section>
     </main>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
