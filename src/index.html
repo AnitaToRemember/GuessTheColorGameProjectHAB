@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <h1 id="titulo">Adivina el color</h1>
+      <h1 id="title">Adivina el color</h1>
       <nav>
         <ul class="menu">
           <li>
@@ -29,28 +29,30 @@
       <section>
         <h2>¿Qué color es este?</h2>
 
-        <div> 
+        <div id="colourToGuess"> 
           <p>
             Color RGB (<span id="random_red">255</span>, <span id="random_green">255</span>, <span id="random_blue">255</span>)
           </p>
         </div>
       </section>
 
-      <section class="cuadros">
-        <div  id= "colour1" class="colorDeLosCuadros"></div>
-        <div id= "colour2"class="colorDeLosCuadros"></div>
-        <div id= "colour3" class="colorDeLosCuadros"></div>
-        <div id= "colour4" class="colorDeLosCuadros"></div>
-        <div id= "colour5" class="colorDeLosCuadros"></div>
-        <div id= "colour6" class="colorDeLosCuadros"></div>
+      <section class="squares">
+        <div  id= "colour1" class="squareColours"></div>
+        <div id= "colour2"class="squareColours"></div>
+        <div id= "colour3" class="squareColours"></div>
+        <div id= "colour4" class="squareColours"></div>
+        <div id= "colour5" class="squareColours"></div>
+        <div id= "colour6" class="squareColours"></div>
       </section>
 
-      <section>
-        <p>
-          Aciertos: <span id="hits">1</span> | Fallos: <span id="failures">1</span>
+      <section id="score">
+        <p >
+          Aciertos: <span id="hits">1</span>  Fallos: <span id="failures">1</span>
         </p>
       </section>
     </main>
+
+    <footer> Creado por Ana, Evelyn y Zabdiel</footer>
 
     <script src="./js/script.js"></script>
   </body>
