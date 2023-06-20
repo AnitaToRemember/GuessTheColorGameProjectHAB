@@ -39,6 +39,6 @@ playButton.addEventListener("click", playGame);
 playGame();
 
 const createBlockColor = () => {
-    
+    //añadir el color de fondo verdadero a una de las cajas de forma aleatoria y a las otras asignarles otros randoms
 }
 
