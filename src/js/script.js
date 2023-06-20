@@ -40,7 +40,7 @@ const createBlockColor = () => {
   }
 };
 
-const playGame = () => {
+const playAgain = () => {
   redRandom = randomNumber(255);
   redColorSpan.innerText = redRandom;
   greenRandom = randomNumber(255);
@@ -48,24 +48,42 @@ const playGame = () => {
   blueRandom = randomNumber(255);
   blueColorSpan.innerText = blueRandom;
   colorRGB = "rgb(" + redRandom + ", " + greenRandom + ", " + blueRandom + ")";
-  hits = 0;
   hitsSpan.innerText = hits;
-  failures = 0;
   failuresSpan.innerText = failures;
   createBlockColor();
 };
 
-playButton.addEventListener("click", playGame);
-playGame();
+const resetGame = () => {
+  hits = 0;
+  failures = 0;
+  playAgain();
+};
 
+playButton.addEventListener("click", resetGame);
+resetGame();
+
+const checkWinner = () => {
+  if (hits === 3) {
+    alert("¡Ganaste!");
+    resetGame();
+  } else if (failures === 3) {
+    alert("¡Perdiste!");
+    resetGame();
+  } else {
+    playAgain();
+  }
+};
 const box1 = document.getElementById("colour1");
 
 const box1Clicked = () => {
-    if (box1.style.backgroundColor === colorRGB) {
-        console.log("¡Acertaste!");
-    }else{
-        console.log("¡Fallaste!");
-    }
+  if (box1.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
 };
 
 box1.addEventListener("click", box1Clicked);
@@ -73,11 +91,14 @@ box1.addEventListener("click", box1Clicked);
 const box2 = document.getElementById("colour2");
 
 const box2Clicked = () => {
-    if (box2.style.backgroundColor === colorRGB) {
-        console.log("¡Acertaste!");
-    }else{
-        console.log("¡Fallaste!");
-    }
+  if (box2.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
 };
 
 box2.addEventListener("click", box2Clicked);
@@ -85,11 +106,14 @@ box2.addEventListener("click", box2Clicked);
 const box3 = document.getElementById("colour3");
 
 const box3Clicked = () => {
-    if (box3.style.backgroundColor === colorRGB) {
-        console.log("¡Acertaste!");
-    }else{
-        console.log("¡Fallaste!");
-    }
+  if (box3.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
 };
 
 box3.addEventListener("click", box3Clicked);
@@ -97,11 +121,14 @@ box3.addEventListener("click", box3Clicked);
 const box4 = document.getElementById("colour4");
 
 const box4Clicked = () => {
-    if (box4.style.backgroundColor === colorRGB) {
-        console.log("¡Acertaste!");
-    }else{
-        console.log("¡Fallaste!");
-    }
+  if (box4.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
 };
 
 box4.addEventListener("click", box4Clicked);
@@ -109,11 +136,14 @@ box4.addEventListener("click", box4Clicked);
 const box5 = document.getElementById("colour5");
 
 const box5Clicked = () => {
-    if (box5.style.backgroundColor === colorRGB) {
-        console.log("¡Acertaste!");
-    }else{
-        console.log("¡Fallaste!");
-    }
+  if (box5.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
 };
 
 box5.addEventListener("click", box5Clicked);
@@ -121,11 +151,14 @@ box5.addEventListener("click", box5Clicked);
 const box6 = document.getElementById("colour6");
 
 const box6Clicked = () => {
-    if (box6.style.backgroundColor === colorRGB) {
-        console.log("¡Acertaste!");
-    }else{
-        console.log("¡Fallaste!");
-    }
+  if (box6.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
 };
 
 box6.addEventListener("click", box6Clicked);
