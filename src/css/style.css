@@ -40,6 +40,7 @@ body{
   
 .menu li {
   display: inline-block;
+  margin: 0 10px;
   }
   
 .menu li a {
@@ -112,3 +113,81 @@ footer{
 }
 
 /* de aqui en adelante podemos trabajar el responsive*/
+
+
+
+
+/*NUEVO CODIGO STYLE
+
+body {
+    background-color: #0C134F;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul.menu li {
+    margin: 0 10px;
+}
+
+nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 2rem;
+    bottom: 0;
+   
+}
+*/
