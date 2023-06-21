@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500;700;900&display=swap');
+
+/* para darle formato al fondo, elimino los margenes para que quede todo pegado al borde del navegador*/
+body{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #0C134F;
+  color: #fff;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* dandole formato al titulo*/
+#title {
+  display: flex;
+  justify-content: center;
+  background-color: #73BBC9;
+  margin: 0;
+  padding: 1rem;
+}
+
+/*formateando el menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  background-color: #5C469C;
+  }
+  
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+  }
+  
+.menu li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+    /*quitar el azul de link visitado con JS las letras del menu deben ser blancas*/
+  }
+  
+/* formato para el titulo del juego */
+h2{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* dandole formato al mostrador del color a adivinar*/
+#colourToGuess {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+/* colocando los cuadros en centreado y en 2 filas 3 columnas */
+.squares{
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  justify-content: center;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.squareColours{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
+  margin: 10px;
+  border-radius: 10%;
+  }
+
+/* dandole formato al contador*/
+#score{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* formato del footer*/
+footer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #5C469C;
+  width: 100vw;
+  height: 2rem;
+  bottom: 0;
+}
+
+/* de aqui en adelante podemos trabajar el responsive*/
+
+
+
+
+/*NUEVO CODIGO STYLE
+
+body {
+    background-color: #0C134F;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul.menu li {
+    margin: 0 10px;
+}
+
+nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 2rem;
+    bottom: 0;
+   
+}
+*/

@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juego: Adivina el color</title>
-<link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-<header>
-    <h1 id="titulo">Adivina el color</h1>
-</header>
+  <body>
+    <header>
+      <h1 id="title">Adivina el color</h1>
+      <nav>
+        <ul class="menu">
+          <li>
+          <a id="play" href="#">Jugar</a>
+          </li>
+          <li>
+            <a href="./public/how_to_play.html">¿Cómo jugar?</a>
+          </li>
+          <li>
+            <a href="./public/team.html">Equipo</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- nos piden que la pagina este dividida en dos en una que se ve  el color rgb que debe adivinar el usario -->
-<div> Color RGB (255, 255, 255)</div>
+    <main>
+      <section>
+        <h2>¿Qué color es este?</h2>
 
-<!--y otra con los cuadros de colores, confirmamos con Stefano per no creo que tenga que ver con grid y flex-->
-<main>
-    <section class="cuadros">
-        <div class="colorDeLosCuadros"></div>
-        <div class="colorDeLosCuadros"></div>
-        <div class="colorDeLosCuadros"></div>
-        <div class="colorDeLosCuadros"></div>
-        <div class="colorDeLosCuadros"></div>
-        <div class="colorDeLosCuadros"></div>
-    </section>
+        <div id="colourToGuess"> 
+          <p>
+            Color RGB (<span id="random_red">255</span>, <span id="random_green">255</span>, <span id="random_blue">255</span>)
+          </p>
+        </div>
+      </section>
 
-    <section>
-        <p>Intentos: | Fallos: </p>
-    </section>
-</main>
+      <section class="squares">
+        <div  id= "colour1" class="squareColours"></div>
+        <div id= "colour2"class="squareColours"></div>
+        <div id= "colour3" class="squareColours"></div>
+        <div id= "colour4" class="squareColours"></div>
+        <div id= "colour5" class="squareColours"></div>
+        <div id= "colour6" class="squareColours"></div>
+      </section>
 
-    <script src="./js/main.js"></script>
-</body>
+      <section id="score">
+        <p >
+          Aciertos: <span id="hits">1</span>  Fallos: <span id="failures">1</span>
+        </p>
+      </section>
+    </main>
+
+    <footer> Creado por Ana, Evelin y Zabdiel</footer>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>
