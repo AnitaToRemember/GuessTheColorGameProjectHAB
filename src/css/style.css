@@ -1,55 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500;700;900&display=swap');
-
-/* para darle formato al fondo, elimino los margenes para que quede todo pegado al borde del navegador*/
-body{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  background-color: #0C134F;
-  color: #fff;
-  margin: 0;
-  height: 100vh;
-  font-family: 'Outfit', sans-serif;
-  width: 100vw;
-  height: 100vh;
-}
-
-/* dandole formato al titulo*/
-#title {
-  display: flex;
-  justify-content: center;
-  background-color: #73BBC9;
-  margin: 0;
-  padding: 1rem;
-}
-
-/*formateando el menu */
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style: none;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-  background-color: #5C469C;
-  }
-  
-.menu li {
-  display: inline-block;
-  margin: 0 10px;
-  }
-  
-.menu li a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-    /*quitar el azul de link visitado con JS las letras del menu deben ser blancas*/
-  }
-  
 /* formato para el titulo del juego */
 h2{
   display: flex;
@@ -84,7 +32,7 @@ h2{
   flex-direction: column;
   width: 100%;
   height: 100px;
-  background-color: aqua;
+  background-color: rgb(0,255,255);
   margin: 10px;
   border-radius: 10%;
   }
@@ -98,22 +46,6 @@ h2{
   align-items: center;
 }
 
-/* formato del footer*/
-footer{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  background-color: #5C469C;
-  width: 100vw;
-  height: 2rem;
-  bottom: 0;
-}
-
-/* de aqui en adelante podemos trabajar el responsive*/
-
 
 
 
@@ -122,8 +54,8 @@ footer{
 body {
     background-color: #0C134F;
     color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: Arial, sans-serif; no lo agrego por que puse un font personalizado
+    margin: 0; ya esta
     padding: 0;
 }
 

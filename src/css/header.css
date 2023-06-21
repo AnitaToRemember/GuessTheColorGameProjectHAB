@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500;700;900&display=swap');
+
+/* para darle formato al fondo, elimino los margenes para que quede todo pegado al borde del navegador*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgb(12,19,79);
+    color: rgb(255,255,255);
+    margin: 0;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* dandole formato al titulo*/
+#title {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(115,187,201);
+    margin: 0;
+    padding: 1rem;
+}
+
+/*formateando el menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(92,70,156);
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    /*quitar el azul de link visitado con JS las letras del menu deben ser blancas*/
+}
