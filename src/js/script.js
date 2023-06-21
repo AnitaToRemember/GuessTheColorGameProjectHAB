@@ -13,12 +13,14 @@ let colorRGB =
 let hits = 0;
 let failures = 0;
 
+
 const playButton = document.getElementById("play");
 const redColorSpan = document.getElementById("random_red");
 const greenColorSpan = document.getElementById("random_green");
 const blueColorSpan = document.getElementById("random_blue");
 const hitsSpan = document.getElementById("hits");
 const failuresSpan = document.getElementById("failures");
+
 
 const randomFakeColour = () => {
   const red = randomNumber(255);
