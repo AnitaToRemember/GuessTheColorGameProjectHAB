@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500;700;900&display=swap');
+
+/* dandole formato al titulo*/
+
+header{
+    text-align: center;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightblue);
+    margin: 0;
+    padding: 1rem;
+    font-size: 40px;
+}
+
+/*formateando el menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--purple);
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--white);
+    /*quitar el azul de link visitado con JS las letras del menu deben ser blancas*/
+}
