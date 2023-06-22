@@ -7,6 +7,7 @@
   --aqua:rgb(0,255,255);
   --lightblue:rgb(115,187,201);
   --purple:rgb(92,70,156);
+  --black: rgb(0,0,0)
 }
 /* para darle formato al fondo, elimino los margenes para que quede todo pegado al borde del navegador*/
 body{
