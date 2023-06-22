@@ -9,6 +9,9 @@
   --purple:rgb(92,70,156);
   --black: rgb(0,0,0)
 }
+/* utilizo una variable para los colores, puede ser usado directamente en los otros archivos CSS iniciando con var(--nombre del color indicado en la lista) */
+
+
 /* para darle formato al fondo, elimino los margenes para que quede todo pegado al borde del navegador*/
 body{
   display: flex;
