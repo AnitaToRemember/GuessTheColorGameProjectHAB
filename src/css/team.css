@@ -1,0 +1,61 @@
+img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid var(--purple);
+    padding: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+#meetTheTeam{
+    margin-bottom: 2rem;
+}
+
+#meetTheTeam > ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#meetTheTeam > ul > li{
+    background-color: var(--white);
+    color: var(--aqua);
+    max-width: 300px;
+}
+
+
+#meetTheTeam > article > h3{
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#meetTheTeam > article > p{
+    padding: 0 1rem;
+}
+
+#meetTheTeam article ul{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#meetTheTeam article ul a{
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    font-size:0;
+    margin: 0 2rem;
+}
+
+#meetTheTeam article ul a.linkedin{
+background-image: url(../img/linkedin.svg);
+}
+
+#meetTheTeam article ul a.github{
+    background-image: url(../img/square-github.svg);
+    }
