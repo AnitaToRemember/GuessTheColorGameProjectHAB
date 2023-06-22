@@ -15,10 +15,11 @@ body{
   align-content: center;
   background-color: var(--blue);
   color: var(--white);
-  height: 100vh;
   font-family: 'Outfit', sans-serif;
   width: 100vw;
   height: 100vh;
+  border: 0;
+  margin: 0;
 }
 
 main {
@@ -27,14 +28,17 @@ main {
 }
 
 /* formato para el titulo del juego */
-h2{
+#colorTitle{
 display: flex;
 justify-content: center;
 margin: 0;
-background-color: var(--aqua);
-margin: 0;
 padding: 1rem;
 font-size: 24px;
+}
+
+#rgbToGuess{
+  margin: 0;
+  padding:0;
 }
 
 /* dandole formato al mostrador del color a adivinar*/
