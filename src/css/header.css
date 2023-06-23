@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500;700;900&display=swap');
 /* este import da el font a todas las paginas */
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 0;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
 /* dandole formato al titulo*/
 
 header{
@@ -41,5 +54,5 @@ header{
     text-decoration: none;
     font-weight: 800;
     color: var(--white);
-    /*quitar el azul de link visitado con JS las letras del menu deben ser blancas*/
+    font-size: 15px;
 }

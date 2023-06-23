@@ -11,6 +11,11 @@
 }
 /* utilizo una variable para los colores, puede ser usado directamente en los otros archivos CSS iniciando con var(--nombre del color indicado en la lista) */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* para darle formato al fondo, elimino los margenes para que quede todo pegado al borde del navegador*/
 body{
@@ -23,27 +28,34 @@ body{
   font-family: 'Outfit', sans-serif;
   width: 100vw;
   height: 100vh;
-  border: 0;
-  margin: 0;
 }
 
-main {
-  padding: 20px;
-  text-align: center;
+#colorMain{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
+
+main section  {
+  text-align: justify;
+  margin: 0 30px;
+  font-size: 1.3rem;
+}
+
 
 /* formato para el titulo del juego */
 #colorTitle{
 display: flex;
 justify-content: center;
-margin: 0;
+margin-top: 30px;
 border: 0;
 padding: 0;
 font-size: 24px;
 }
 
 #rgbToGuess{
-  margin: 0;
+  margin-bottom: 20px;
   padding:0;
 
 }
@@ -59,6 +71,12 @@ flex-direction: column;
 justify-content: center;
 align-content: center;
 align-items: center;
+margin-bottom: 20px;
+}
+
+#colourToGuess > p{
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 
@@ -69,7 +87,7 @@ grid-template-columns: repeat(3,100px);
 justify-content: center;
 align-items: center;
 gap: 1rem;
-margin-right: 2rem;
+margin: 0;
 }
 
 .squareColours{
@@ -80,14 +98,11 @@ flex-direction: column;
 width: 100%;
 height: 100px;
 background-color: var(--aqua);
-margin: 10px;
+margin: 0;
 border-radius: 10%;
 }
 
-#colourToGuess > p{
-  font-size: 18px;
-  line-height: 1.5;
-}
+
 
 /* dandole formato al contador*/
 #score{
@@ -96,7 +111,5 @@ flex-direction: column;
 justify-content: center;
 align-content: center;
 align-items: center;
-
-g
+margin-top: 20px;
 }
-

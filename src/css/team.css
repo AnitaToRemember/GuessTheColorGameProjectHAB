@@ -1,14 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Eliminando bordes y padding para que todo este pegado al margen de la ventana. */
 
 /* header */
 #teamTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* team cards */
@@ -36,37 +33,32 @@ main{
 width: 100%;
 }
 
-#meetTheTeam > ul > li{
+#meetTheTeam ul li{
     background-color: var(--lightblue);
     color: var(--white);
     max-width: 300px;
 }
 
-/* formato del nombre de la tarjeta */
-#meetTheTeam > article > h3{
+
+#meetTheTeam article h3{
     margin: 1rem 0;
     text-align: center;
     font-size: 2rem;
 }
 
-/* formateando las fotos */
 img{
     max-width: 100%;;
     padding: 5px;
 }
 
-/* dandole tamanho al nombre de cada tarjeta */
 .teamName{
     font-size: 30px;
     margin-bottom: 1rem;
 }
 
-/* formatoo del parrafo */
-#meetTheTeam > article > p{
+#meetTheTeam  article p{
     padding: 0 1rem;
 }
-
-/* formato a los iconos de linkedIn y gitHub */
 
 #meetTheTeam article ul{
     padding: 2rem 0;
@@ -79,7 +71,6 @@ img{
     margin-left: 10px;
 }
 
-*/
 #meetTheTeam article ul a.fa-brands{
 font-size: 50px;
 text-decoration: none;
