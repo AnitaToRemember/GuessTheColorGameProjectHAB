@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;500;700;900&display=swap');
-/* este import da el font a todas las paginas */
-*{
+
+/* para darle formato al fondo, elimino los margenes para que quede todo pegado al borde del navegador*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgb(12,19,79);
+    color: rgb(255,255,255);
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* dandole formato al titulo*/
-
-header{
-    text-align: center;
-}
-
 #title {
     display: flex;
     justify-content: center;
-    background-color: var(--lightblue);
-    border: 0;
+    background-color: rgb(115,187,201);
     margin: 0;
     padding: 1rem;
-    font-size: 50px;
-    font-weight: 800;
 }
 
 /*formateando el menu */
@@ -33,20 +33,18 @@ header{
     justify-content: center;
     list-style: none;
     gap: 1rem;
-    background-color: var(--purple);
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(92,70,156);
 }
 
 .menu li {
     display: inline-block;
-    margin: 0 10px;
 }
 
 .menu li a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    font-weight: 800;
-    color: var(--white);
     /*quitar el azul de link visitado con JS las letras del menu deben ser blancas*/
 }
