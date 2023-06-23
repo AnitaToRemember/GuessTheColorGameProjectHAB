@@ -1,13 +1,19 @@
 "use strict";
 
-// Función para generar un número aleatorio entre 1 y el rango máximo proporcionado
-const randomNumber = (maxRange) => Math.floor(Math.random() * maxRange) + 1;
+const randomNumber = (maxRange) => {
+  const randomNumber = Math.floor(Math.random() * maxRange) + 1;
+  return randomNumber;
+};
 
-// Variables para almacenar los valores de los colores rojo, verde y azul
-let redRandom, greenRandom, blueRandom;
-let colorRGB;
+let redRandom = randomNumber(255);
+let greenRandom = randomNumber(255);
+let blueRandom = randomNumber(255);
+let colorRGB =
+  "rgb(" + redRandom + ", " + greenRandom + ", " + blueRandom + ")";
+let hits = 0;
+let failures = 0;
 
-// Obtener referencias a elementos del documento HTML por su ID
+
 const playButton = document.getElementById("play");
 const redColorSpan = document.getElementById("random_red");
 const greenColorSpan = document.getElementById("random_green");
@@ -15,51 +21,49 @@ const blueColorSpan = document.getElementById("random_blue");
 const hitsSpan = document.getElementById("hits");
 const failuresSpan = document.getElementById("failures");
 
-// Variables para llevar el conteo de aciertos y fallos
-let hits = 0;
-let failures = 0;
 
-// Función para generar un color falso aleatorio
 const randomFakeColour = () => {
   const red = randomNumber(255);
   const green = randomNumber(255);
   const blue = randomNumber(255);
-  return `rgb(${red}, ${green}, ${blue})`;
+  const newColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+  return newColor;
 };
 
-// Función para asignar los colores a los bloques de manera aleatoria
 const createBlockColor = () => {
   const trueBoxNumber = randomNumber(6);
   for (let i = 1; i <= 6; i++) {
     const box = document.getElementById(`colour${i}`);
-    box.style.backgroundColor = (trueBoxNumber === i) ? colorRGB : randomFakeColour();
+    if (trueBoxNumber === i) {
+      box.style.backgroundColor = colorRGB;
+    } else {
+      box.style.backgroundColor = randomFakeColour();
+    }
   }
 };
 
-// Función para reiniciar el juego y generar nuevos valores
 const playAgain = () => {
   redRandom = randomNumber(255);
-  greenRandom = randomNumber(255);
-  blueRandom = randomNumber(255);
-  colorRGB = `rgb(${redRandom}, ${greenRandom}, ${blueRandom})`;
-
   redColorSpan.innerText = redRandom;
+  greenRandom = randomNumber(255);
   greenColorSpan.innerText = greenRandom;
+  blueRandom = randomNumber(255);
   blueColorSpan.innerText = blueRandom;
+  colorRGB = "rgb(" + redRandom + ", " + greenRandom + ", " + blueRandom + ")";
   hitsSpan.innerText = hits;
   failuresSpan.innerText = failures;
-
   createBlockColor();
 };
 
-// Función para reiniciar el juego y restablecer los conteos
 const resetGame = () => {
   hits = 0;
   failures = 0;
   playAgain();
 };
 
-// Función para comprobar si se ha alcanzado la condición de victoria o derrota
+playButton.addEventListener("click", resetGame);
+resetGame();
+
 const checkWinner = () => {
   if (hits === 3) {
     alert("¡Ganaste!");
@@ -71,33 +75,92 @@ const checkWinner = () => {
     playAgain();
   }
 };
+const box1 = document.getElementById("colour1");
 
-// Función que se ejecuta cuando se hace clic en uno de los bloques
-const boxClicked = (boxId) => {
-  const box = document.getElementById(boxId);
-  if (box.style.backgroundColor === colorRGB) {
-    hits++;
+const box1Clicked = () => {
+  if (box1.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
     hitsSpan.innerText = hits;
   } else {
-    failures++;
+    failures = failures + 1;
     failuresSpan.innerText = failures;
   }
   checkWinner();
 };
 
-// Función para agregar un event listener a cada bloque
-const addBoxClickListener = (boxId) => {
-  const box = document.getElementById(boxId);
-  box.addEventListener("click", () => boxClicked(boxId));
+box1.addEventListener("click", box1Clicked);
+
+const box2 = document.getElementById("colour2");
+
+const box2Clicked = () => {
+  if (box2.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
 };
 
-// Agregar listeners a las cajas
-for (let i = 1; i <= 6; i++) {
-  addBoxClickListener(`colour${i}`);
-}
+box2.addEventListener("click", box2Clicked);
 
-// Agregar un event listener al botón de jugar para reiniciar el juego
-playButton.addEventListener("click", resetGame);
+const box3 = document.getElementById("colour3");
 
-// Iniciar el juego
-resetGame();
+const box3Clicked = () => {
+  if (box3.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
+};
+
+box3.addEventListener("click", box3Clicked);
+
+const box4 = document.getElementById("colour4");
+
+const box4Clicked = () => {
+  if (box4.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
+};
+
+box4.addEventListener("click", box4Clicked);
+
+const box5 = document.getElementById("colour5");
+
+const box5Clicked = () => {
+  if (box5.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
+};
+
+box5.addEventListener("click", box5Clicked);
+
+const box6 = document.getElementById("colour6");
+
+const box6Clicked = () => {
+  if (box6.style.backgroundColor === colorRGB) {
+    hits = hits + 1;
+    hitsSpan.innerText = hits;
+  } else {
+    failures = failures + 1;
+    failuresSpan.innerText = failures;
+  }
+  checkWinner();
+};
+
+box6.addEventListener("click", box6Clicked);
