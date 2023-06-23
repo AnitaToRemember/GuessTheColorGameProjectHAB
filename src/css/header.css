@@ -14,6 +14,19 @@ body{
     height: 100vh;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 0;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
 /* dandole formato al titulo*/
 #title {
     display: flex;
@@ -45,5 +58,7 @@ body{
     display: block;
     padding: 10px 20px;
     text-decoration: none;
+    font-weight: 800;
+    color: var(--white);
     /*quitar el azul de link visitado con JS las letras del menu deben ser blancas*/
 }
