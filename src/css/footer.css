@@ -2,7 +2,6 @@
 footer{
     display: flex;
     flex-direction: column;
-    position: absolute;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -10,4 +9,5 @@ footer{
     width: 100vw;
     height: 2rem;
     bottom: 0;
+    /* el bottom:0 es el que permite que el footer se mantenga abajo siempre */
 }

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juego: Adivina el color</title>
     <link rel="stylesheet" href="../src/css/style.css" />
-    <link rel="stylesheet" href="../src/css/header.css" />
-    <link rel="stylesheet" href="../src/css/footer.css" />
+    <link rel="stylesheet" href="../src/css/header.css">
+    <link rel="stylesheet" href="../src/css/footer.css">
+    
   </head>
 
   <body>
@@ -14,7 +15,7 @@
       <h1 id="title">Adivina el color</h1>
       <nav>
         <ul class="menu">
-          <li><a id="play" href="#">Jugar</a></li>
+          <li><a id="play" href="./index.html">Jugar</a></li>
           <li><a href="../src/public/how_to_play.html">¿Cómo jugar?</a></li>
           <li><a href="../src/public/team.html">Equipo</a></li>
         </ul>
@@ -23,13 +24,11 @@
 
     <main>
       <section>
-        <h2>¿Qué color es este?</h2>
+        <h2 id="colorTitle">¿Qué color es este?</h2>
 
-        <div id="colourToGuess">
-          <p>
-            Color RGB (<span id="random_red">255</span>,
-            <span id="random_green">255</span>,
-            <span id="random_blue">255</span>)
+        <div id="colourToGuess"> 
+          <p id="rgbToGuess">
+            Color RGB (<span id="random_red">255</span>, <span id="random_green">255</span>, <span id="random_blue">255</span>)
           </p>
         </div>
       </section>
@@ -51,7 +50,7 @@
       </section>
     </main>
 
-    <footer>Creado por Ana, Evelin y Zabdiel</footer>
+    <footer> Creado por Ana, Evelin y Zabdiel</footer>
 
     <script src="./js/script.js"></script>
     <script src="./js/style.js"></script>
