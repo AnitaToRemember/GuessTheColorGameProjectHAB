@@ -32,7 +32,8 @@ const createBlockColor = () => {
   const trueBoxNumber = randomNumber(6);
   for (let i = 1; i <= 6; i++) {
     const box = document.getElementById(`colour${i}`);
-    box.style.backgroundColor = (trueBoxNumber === i) ? colorRGB : randomFakeColour();
+    box.style.backgroundColor =
+      trueBoxNumber === i ? colorRGB : randomFakeColour();
   }
 };
 
