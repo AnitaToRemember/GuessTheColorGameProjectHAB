@@ -59,17 +59,26 @@ const resetGame = () => {
   failures = 0;
   playAgain();
 };
+// Función 
+const showPopup = (title, icon, confirmedClicked) => {
+  Swal.fire({
+    title: title,
+    icon: icon,
+  }).then((result) => {
+    if (result.isConfirmed) {
+      confirmedClicked();
+    }
+  });
+}
 
 // Función para comprobar si se ha alcanzado la condición de victoria o derrota
 const checkWinner = () => {
   if (hits === 3) {
-    alert("¡Ganaste!");
-    resetGame();
+    showPopup("Ganaste", "Success", resetGame);
   } else if (failures === 3) {
-    alert("¡Perdiste!");
-    resetGame();
+    showPopup("Game Over", "error", resetGame);
   } else {
-    playAgain();
+    showPopup("Selecciona otra caja!","warning",playAgain);
   }
 };
 
