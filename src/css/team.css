@@ -1,11 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* header */
 #teamTitle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 2rem;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* team cards */
@@ -33,14 +35,14 @@ main{
 width: 100%;
 }
 
-#meetTheTeam ul li{
+#meetTheTeam > ul > li{
     background-color: var(--lightblue);
     color: var(--white);
     max-width: 300px;
 }
 
 
-#meetTheTeam article h3{
+#meetTheTeam > article > h3{
     margin: 1rem 0;
     text-align: center;
     font-size: 2rem;
@@ -56,7 +58,7 @@ img{
     margin-bottom: 1rem;
 }
 
-#meetTheTeam  article p{
+#meetTheTeam > article > p{
     padding: 0 1rem;
 }
 
@@ -71,6 +73,11 @@ img{
     margin-left: 10px;
 }
 
+/* #meetTheTeam article ul a.linkedin{
+background-image: url(../img/LI-In-Bug.png);
+}
+
+*/
 #meetTheTeam article ul a.fa-brands{
 font-size: 50px;
 text-decoration: none;
