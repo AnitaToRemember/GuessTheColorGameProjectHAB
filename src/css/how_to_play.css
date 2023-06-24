@@ -19,21 +19,21 @@
 video{
     width: 500px;
     height: 200px;
-    background-color: green;
+    /* background-color: green; */
 }
 
 @media screen and (min-width: 600px) {
     video{
-    background-color: yellow;
     width: 600px;
     height: 300px;
+    /* background-color: yellow; */
     }
 }
 
 @media screen and (min-width: 1000px) {
     video{
-    background-color: orange;
     width: 1300px;
     height: 460px;
+    /* background-color: orange; */
     }
 }
