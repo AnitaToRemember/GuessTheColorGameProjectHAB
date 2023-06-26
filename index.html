@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juego: Adivina el color</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
-  </head>
 
-  <body>
-    <header>
-      <h1 id="title">Adivina el color</h1>
-      <nav>
-        <ul class="menu">
-          <li><a id="play" href="./index.html">Jugar</a></li>
-          <li><a href="./public/how_to_play.html">¿Cómo jugar?</a></li>
-          <li><a href="./public/team.html">Equipo</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego: Adivina el color</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+</head>
 
-    <main id="colorMain">
-      <section>
-        <h2 id="colorTitle">¿Qué color es este?</h2>
-        <div id="colourToGuess"> 
-          <p id="rgbToGuess">
-            Color RGB (<span id="random_red">255</span>, <span id="random_green">255</span>, <span id="random_blue">255</span>)
-          </p>
-        </div>
-      </section>
+<body>
+  <header>
+    <h1 id="title">Adivina el color</h1>
+    <nav>
+      <ul class="menu">
+        <li><a id="play" href="./index.html">Jugar</a></li>
+        <li><a href="./public/how_to_play.html">¿Cómo jugar?</a></li>
+        <li><a href="./public/team.html">Equipo</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <section class="squares">
-        <div id="colour1" class="squareColours"></div>
-        <div id="colour2" class="squareColours"></div>
-        <div id="colour3" class="squareColours"></div>
-        <div id="colour4" class="squareColours"></div>
-        <div id="colour5" class="squareColours"></div>
-        <div id="colour6" class="squareColours"></div>
-      </section>
-
-      <section id="score">
-        <p>
-          Aciertos: <span id="hits">1</span> Fallos:
-          <span id="failures">1</span>
+  <main id="colorMain">
+    <section>
+      <h2 id="colorTitle">¿Qué color es este?</h2>
+      <div id="colourToGuess">
+        <p id="rgbToGuess">
+          Color RGB (<span id="random_red">255</span>, <span id="random_green">255</span>, <span
+            id="random_blue">255</span>)
         </p>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer><p> Creado por Ana, Evelin y Zabdiel ©</p></footer>
+    <section class="squares">
+      <div id="colour1" class="squareColours"></div>
+      <div id="colour2" class="squareColours"></div>
+      <div id="colour3" class="squareColours"></div>
+      <div id="colour4" class="squareColours"></div>
+      <div id="colour5" class="squareColours"></div>
+      <div id="colour6" class="squareColours"></div>
+    </section>
+
+    <section id="score">
+      <p>
+        Aciertos: <span id="hits">1</span> Fallos:
+        <span id="failures">1</span>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p> Creado por Ana, Evelin y Zabdiel ©</p>
+  </footer>
 
 
-    <script src="./js/script.js"></script>
-    <script src="./js/style.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        applyMenuStyle();
-      });
-    </script>
-  </body>
+  <script src="./js/script.js"></script>
+  <script src="./js/style.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      applyMenuStyle();
+    });
+  </script>
+</body>
+
 </html>

@@ -1,104 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juego: Adivina el color</title>
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
-    <header>
-      <h1 id="title">Adivina el color</h1>
-      <nav>
-        <ul class="menu">
-          <li><a id="play" href="../index.html">Jugar</a></li>
-          <li><a href="./how_to_play.html">¿Cómo jugar?</a></li>
-          <li><a href="./team.html">Equipo</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
-      <section>
-        <h2>¿Cómo jugar?</h2>
-        <br>
 
-        <div class="video">
-          <video
-            src="../video/guessTheColorNormalVoice.mp4"
-            controls
-            preload
-          ></video>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego: Adivina el color</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
-        <div class="titles">
-          <u
-            ><strong><h3>Introducción:</h3></strong></u
-          >
-        </div>
-        <br>
-        <p class="leading">
-          El modelo de color RGB (Red, Green, Blue) es un modelo aditivo
-          utilizado para representar colores mediante la combinación de
-          diferentes intensidades de luz roja, verde y azul. En este modelo, se
-          utilizan valores numéricos para representar la intensidad de cada
-          componente de color.
-        </p>
+<body>
+  <header>
+    <h1 id="title">Adivina el color</h1>
+    <nav>
+      <ul class="menu">
+        <li><a id="play" href="../index.html">Jugar</a></li>
+        <li><a href="./how_to_play.html">¿Cómo jugar?</a></li>
+        <li><a href="./team.html">Equipo</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <p class="leading">
-          Cada componente (rojo, verde y azul) se representa mediante un valor
-          entero en el rango de 0 a 255. El valor 0 representa la ausencia total
-          del componente y el valor 255 representa la intensidad máxima del
-          componente. El modelo de color RGB es un sistema aditivo en el que se
-          combinan las intensidades de luz roja, verde y azul para crear una
-          amplia gama de colores mediante valores numéricos en el rango de 0 a
-          255 para cada componente. Es ampliamente utilizado en aplicaciones
-          digitales, como pantallas de computadoras, televisores y programas de
-          diseño gráfico.
-        </p>
+  <main>
+    <section>
+      <h2>¿Cómo jugar?</h2>
+      <br>
 
-        <div class="titles">
-          <u
-            ><strong><h3>Pasos a seguir:</h3></strong></u
-          >
-        </div>
-        <br>
+      <div class="video">
+        <video src="../video/guessTheColorNormalVoice.mp4" controls preload></video>
+      </div>
+      <br>
+      <div class="titles">
+        <u><strong>
+            <h3>Introducción:</h3>
+          </strong></u>
+      </div>
+      <br>
+      <p class="leading">
+        El modelo de color RGB (Red, Green, Blue) es un modelo aditivo
+        utilizado para representar colores mediante la combinación de
+        diferentes intensidades de luz roja, verde y azul. En este modelo, se
+        utilizan valores numéricos para representar la intensidad de cada
+        componente de color.
+      </p>
 
-        <p class="leading">
-          En este juego, se mostrará un código de color RGB, como por ejemplo
-          "255, 87, 51". Donde así mismo Verás varias cajas de colores. Una de
-          las cajas contendrá el color correcto, mientras que las otras cajas
-          mostrarán variaciones. Tu objetivo es hacer clic en la caja que tenga
-          el color correcto. Si haces clic en la caja correcta, acumularás un
-          punto en el contador de aciertos. Por otro lado, si te equivocas y
-          seleccionas una caja incorrecta, el contador de fallos se
-          incrementará. Después de cada intento, el juego mostrará un nuevo
-          código de color y nuevas cajas para que sigas jugando. Ganarás la
-          partida si logras acumular 3 aciertos antes de alcanzar 3 fallos.
-          ¡Buena suerte y diviértete jugando!
-        </p>
-      </section>
-        <p class="leading">
-          En este juego, se mostrará un código de color RGB, como por ejemplo
-          "255, 87, 51". Donde así mismo Verás varias cajas de colores. Una de
-          las cajas contendrá el color correcto, mientras que las otras cajas
-          mostrarán variaciones. Tu objetivo es hacer clic en la caja que tenga
-          el color correcto. Si haces clic en la caja correcta, acumularás un
-          punto en el contador de aciertos. Por otro lado, si te equivocas y
-          seleccionas una caja incorrecta, el contador de fallos se
-          incrementará. Después de cada intento, el juego mostrará un nuevo
-          código de color y nuevas cajas para que sigas jugando. Ganarás la
-          partida si logras acumular 3 aciertos antes de alcanzar 3 fallos.
-          ¡Buena suerte y diviértete jugando!
-        </p>
-      </section>
-    </main>
-    <footer><p> Creado por Ana, Evelin y Zabdiel</p></footer>
-    <script src="../js/style.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        applyMenuStyle();
-      });
-    </script>
-  </body>
+      <p class="leading">
+        Cada componente (rojo, verde y azul) se representa mediante un valor
+        entero en el rango de 0 a 255. El valor 0 representa la ausencia total
+        del componente y el valor 255 representa la intensidad máxima del
+        componente. El modelo de color RGB es un sistema aditivo en el que se
+        combinan las intensidades de luz roja, verde y azul para crear una
+        amplia gama de colores mediante valores numéricos en el rango de 0 a
+        255 para cada componente. Es ampliamente utilizado en aplicaciones
+        digitales, como pantallas de computadoras, televisores y programas de
+        diseño gráfico.
+      </p>
+
+      <div class="titles">
+        <u><strong>
+            <h3>Pasos a seguir:</h3>
+          </strong></u>
+      </div>
+      <br>
+
+      <p class="leading">
+        En este juego, se mostrará un código de color RGB, como por ejemplo
+        "255, 87, 51". Donde así mismo Verás varias cajas de colores. Una de
+        las cajas contendrá el color correcto, mientras que las otras cajas
+        mostrarán variaciones. Tu objetivo es hacer clic en la caja que tenga
+        el color correcto. Si haces clic en la caja correcta, acumularás un
+        punto en el contador de aciertos. Por otro lado, si te equivocas y
+        seleccionas una caja incorrecta, el contador de fallos se
+        incrementará. Después de cada intento, el juego mostrará un nuevo
+        código de color y nuevas cajas para que sigas jugando. Ganarás la
+        partida si logras acumular 3 aciertos antes de alcanzar 3 fallos.
+        ¡Buena suerte y diviértete jugando!
+      </p>
+    </section>
+    <p class="leading">
+      En este juego, se mostrará un código de color RGB, como por ejemplo
+      "255, 87, 51". Donde así mismo Verás varias cajas de colores. Una de
+      las cajas contendrá el color correcto, mientras que las otras cajas
+      mostrarán variaciones. Tu objetivo es hacer clic en la caja que tenga
+      el color correcto. Si haces clic en la caja correcta, acumularás un
+      punto en el contador de aciertos. Por otro lado, si te equivocas y
+      seleccionas una caja incorrecta, el contador de fallos se
+      incrementará. Después de cada intento, el juego mostrará un nuevo
+      código de color y nuevas cajas para que sigas jugando. Ganarás la
+      partida si logras acumular 3 aciertos antes de alcanzar 3 fallos.
+      ¡Buena suerte y diviértete jugando!
+    </p>
+    </section>
+  </main>
+  <footer>
+    <p> Creado por Ana, Evelin y Zabdiel ©</p>
+  </footer>
+  <script src="../js/style.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      applyMenuStyle();
+    });
+  </script>
+</body>
+
 </html>
