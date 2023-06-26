@@ -74,9 +74,9 @@ const showPopup = (title, icon, confirmedClicked) => {
 // Función para comprobar si se ha alcanzado la condición de victoria o derrota
 const checkWinner = () => {
   if (hits === 3) {
-    showPopup("Ganaste", "Success", resetGame);
+    showPopup("¡Ganaste!", "Success", resetGame);
   } else if (failures === 3) {
-    showPopup("Game Over", "error", resetGame);
+    showPopup("¡Game Over!", "error", resetGame);
   } else {
     showPopup("Selecciona otra caja!","warning",playAgain);
   }
