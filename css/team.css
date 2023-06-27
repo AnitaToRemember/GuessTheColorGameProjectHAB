@@ -1,88 +1,77 @@
-
-
-/* header */
-#teamTitle{
+/* Header */
+#teamTitle {
     margin: 2rem;
     font-size: 30px;
-}
-
-/* team cards */
-
-main{
+  }
+  
+  /* Team cards */
+  main {
     padding: 0 1rem;
-}
-#meetTheTeam{
+  }
+  
+  #meetTheTeam {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-}
-
-#meetTheTeam > ul{
+  }
+  
+  #meetTheTeam > ul {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     list-style: none;
-}
-
-#meetTheTeam article figure img{
+  }
+  
+  #meetTheTeam article figure img {
     width: 100%;
-}
-
-#meetTheTeam > ul > li{
+  }
+  
+  #meetTheTeam > ul > li {
     background-color: var(--lightblue);
     color: var(--white);
     max-width: 300px;
     margin: 0 10px;
     flex: 1;
-}
-
-
-#meetTheTeam > article > h3{
+  }
+  
+  #meetTheTeam > article > h3 {
     margin: 1rem 0;
     text-align: center;
     font-size: 2rem;
-}
-
-img{
-    max-width: 100%;;
+  }
+  
+  img {
+    max-width: 100%;
     padding: 5px;
-}
-
-.teamName{
+  }
+  
+  .teamName {
     font-size: 30px;
     margin-bottom: 1rem;
-}
-
-#meetTheTeam > article > p{
+  }
+  
+  #meetTheTeam > article > p {
     padding: 0 1rem;
-}
-
-#meetTheTeam article ul{
-    padding:2rem 0;
-    display: flex;
-    justify-content:center;
-    list-style: none;
-}
-
-#teamDescription {
     height: 150px;
     overflow: hidden;
-}
-
-#icons{
-    margin-left: 10px;
-}
-
-#meetTheTeam article ul a.fa-brands {
-font-size: 50px;
-text-decoration: none;
-color: var(--purple);
-}
-
-#meetTheTeam li {
-  flex: 1;
-   margin: 0 10px;
-}
+  }
+  
+  #meetTheTeam article ul {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  #meetTheTeam article ul a.fa-brands {
+    font-size: 50px;
+    text-decoration: none;
+    color: var(--purple);
+  }
+  
+  #meetTheTeam li {
+    flex: 1;
+    margin: 0 10px;
+  }
