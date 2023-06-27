@@ -59,7 +59,7 @@ const resetGame = () => {
   failures = 0;
   playAgain();
 };
-// Función 
+// Función para generar un pop up
 const showPopup = (title, icon, confirmedClicked) => {
   Swal.fire({
     title: title,
