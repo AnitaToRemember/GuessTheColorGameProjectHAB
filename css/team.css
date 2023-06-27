@@ -28,13 +28,15 @@ main{
 }
 
 #meetTheTeam article figure img{
-width: 100%;
+    width: 100%;
 }
 
 #meetTheTeam > ul > li{
     background-color: var(--lightblue);
     color: var(--white);
     max-width: 300px;
+    margin: 0 10px;
+    flex: 1;
 }
 
 
@@ -53,33 +55,34 @@ img{
     font-size: 30px;
     margin-bottom: 1rem;
 }
-p{
-    margin: 10px;
-}
-
 
 #meetTheTeam > article > p{
     padding: 0 1rem;
 }
 
 #meetTheTeam article ul{
-    padding: 2rem 0;
+    padding:2rem 0;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     list-style: none;
+}
+
+#teamDescription {
+    height: 150px;
+    overflow: hidden;
 }
 
 #icons{
     margin-left: 10px;
 }
 
-/* #meetTheTeam article ul a.linkedin{
-background-image: url(../img/LI-In-Bug.png);
-}
-
-*/
-#meetTheTeam article ul a.fa-brands{
+#meetTheTeam article ul a.fa-brands {
 font-size: 50px;
 text-decoration: none;
 color: var(--purple);
+}
+
+#meetTheTeam li {
+  flex: 1;
+   margin: 0 10px;
 }
